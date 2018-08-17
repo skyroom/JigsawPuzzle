@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	.mask {
+		position:absolute;
+		top:0;
+		left:0;
+		width:600px;
+		height:600px;
+		z-index:20;
+	}
+	.game_box {
+		width:600px;
+		height:600px;
+		margin:0 auto;
+		position:relative;
+	}
+	.container {
+		width:600px;
+		height:600px;
+		position:relative;
+	}
+	.mask_con {
+		width:600px;
+		height:600px;
+		background:#cdcdcd;
+		opacity:.5;
+		text-align:center;
+		line-height:600px;
+		top:0px;
+		left:0px;
+	}
+	.mask button {
+		background:#ff0;
+		border:1px solid #ddd;
+		border-radius:4px;
+		width:150px;
+		height:50px;
+		line-height:30px;
+		color:#000;
+		font-size:18px;
+		font-weight:bold;
+		position:absolute;
+		top:285px;
+		left:225px;
+		cursor:pointer;
+	}
+	.container>div {
+		position:absolute;
+		width:200px;
+		height:200px;
+		background:url(images/02.jpg);
+		cursor:move;
+	}
+	.container .div1 {
+		background-position:0 0;
+	}
+	.container .div2 {
+		background-position:-200px 0px;
+	}
+	.container .div3 {
+		background-position:-400px 0px;
+	}
+	.container .div4 {
+		background-position:0px -200px;
+	}
+	.container .div5 {
+		background-position:-200px -200px;
+	}
+	.container .div6 {
+		background-position:-400px -200px;
+	}
+	.container .div7 {
+		background-position:0px -400px;
+	}
+	.container .div8 {
+		background-position:-200px -400px;
+	}
+	.container .div9 {
+		background-position:-400px -400px;
+	}
+	.gameover {
+		position:absolute;
+		width:500px;
+		height:115px;
+		top:275px;
+		left:50px;
+		line-height:50px;
+		color:#000;
+		border:1px solid #cdcdcd;
+		border-radius:5px;
+		background:#f0f;
+		text-align:center;
+		font-weight:bold;
+		display:none;
+	}
+	.restart {
+		display:block;
+		width:150px;
+		height:40px;
+		line-height:40px;
+		color:#fff;
+		border:1px solid #cdcdcd;
+		border-radius:5px;
+		background:#00f;
+		text-align:center;
+		font-weight:bold;
+		margin:0 auto;
+		cursor:pointer;
+	}
+  </style>
+ </head>
+<body>
+	<div class="game_box">
+		<div class="container">
+		</div>
+		<div class="mask">
+			<div class="mask_con"></div>
+			<button>开始游戏</button>
+			<div class="gameover">
+				<!-- 恭喜你，钓鱼岛是中国的，苍老师是你的! -->
+				恭喜你，闯关成功！ 
+				<span class="restart">再玩一次</span>
+			</div>
+		</div>
+	</div>
+</body>
+ <script src="myJigsaw.js"></script>
+</html>
